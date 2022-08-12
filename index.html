@@ -4,60 +4,50 @@
   <title>Programming Language Suggester</title>
   <link href="css/bootstrap.css" rel="stylesheet" type="text/css">
   <link href="css/styles.css" rel="stylesheet" type="text/css">
-  <script src="jc/script.js"></script>
+  <script src="js/scripts.js"></script>
 </head>
 <body>
   <div class="container">
     <div class="jumbotron">
       <h1>Programming Language Suggester!</h1>
     </div>
-        <h2>Please answer the following True or False questions!</h2>
+        <h2>Please answer the following Yes or No questions!</h2>
           <p>Based on the answers you provide, we will find the best programming language for you to pursue out of Javascript, C#, or Python.</p>
         <form id="questions">
           <p class="bold">Question 1: Javascript seems interesting to me.</p>
-            <label>
-              <input type="radio" name="question1" value= "1"> True</input>
-            </label>
+            <select id="question1">
+              <option id="yes1">Yes</option>
+              <option id="no1">No</option>
+            </select>
           <br>
-            <label>
-              <input type="radio" name="question1" value= "2"> False</input>
-            </label>
           <br>
           <p class="bold">Question 2: Programming in C# is a dream of mine!</p>
-            <label>
-              <input type="radio" name="question2" value= "1"> True</input>
-            </label>
+            <select id="question2">
+              <option id="yes2">Yes</option>
+              <option id="no2">No</option>
+            </select>
           <br>
-            <label>
-              <input type="radio" name="question2" value= "2"> False</input>
-            </label>
           <br>
           <p class="bold">Question 3: I would love to learn how to code in Python.</p>
-            <label>
-              <input type="radio" name="question3" value= "1"> True</input>
-            </label>
+            <select id="question3">
+              <option id="yes3">Yes</option>
+              <option id="no3">No</option>
+            </select>
           <br>
-            <label>
-              <input type="radio" name="question3" value= "2"> False</input>
-            </label>
           <br>
           <p class="bold">Question 4: None of these coding languages interest me.</p>
-            <label>
-              <input type="radio" name="question4" value= "1"> True</input>
-            </label>
+            <select id="question4">
+              <option id="yes4">Yes</option>
+              <option id="no4">No</option>
+            </select>
           <br>
-            <label>
-              <input type="radio" name="question4" value= "2"> False</input>
-            </label>
           <br>
           <p class="bold">Question 5: I want to learn all three coding languages offered!</p>
-            <label>
-              <input type="radio" name="question5" value= "1"> True</input>
-            </label>
+            <select id="question5">
+              <option id="yes5">Yes</option>
+              <option id="no5">No</option>
+            </select>
           <br>
-            <label>
-              <input type="radio" name="question5" value= "2"> False</input>
-            </label>
           <br>
           <button type="submit" class="btn">Submit!</button>
         </form>
