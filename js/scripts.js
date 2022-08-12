@@ -1,24 +1,25 @@
 function codename(e) {
-  e.preventDefault();
-  let a = document.getElementById("question1").value;
-
+    let a = document.querySelector("option#java").value;
+    let b = document.querySelector("option#csharp").value;
+    let c = document.querySelector("option#python").value;
+  
   if (a === "java") {
     return "Javascript";
-  }else if (a === "csharp") {
+  }else if (b === "csharp") {
     return "C#";
-  }else if (a === "python") {
+  }else if (c === "python") {
     return "python";
   }
 }
 
 window.addEventListener("load", function() {
-  const form = document.getElementById("question1");
+  const form = document.getElementById("questions")
   document.querySelector("form").onsubmit = function(e) {
-    e.preventDefault(); 
+    e.preventDefault();
     
-    const result = codename(e);
+  const result = codename(e)
   document.getElementById("output").innerText = result;
-  };
+  }
 });
 
 
