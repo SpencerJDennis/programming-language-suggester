@@ -7,9 +7,13 @@ function codename(event) {
   let e = document.querySelector("select#question5").value;
 
     if (a === "yes1")(b === "no2")(c === "no3")(d === "no4")(e === "no5"); {
-        return "Javascript"
-      } 
-    };
+      return "Javascript"
+      
+    }else if (a === "no1")(b === "yes2")(c === "no3")(d === "no4")(e === "no5"); {
+      return "Javascript"
+    
+    }
+  };
 
 window.addEventListener("load", function() {
   const form = document.getElementById("questions")
