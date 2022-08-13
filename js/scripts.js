@@ -1,26 +1,23 @@
-function codename(e) {
-    let a = document.querySelector("option#java").value;
-    let b = document.querySelector("option#csharp").value;
-    let c = document.querySelector("option#python").value;
+function codename(event) {
+  event.preventDefault();
+  let a = document.getElementById("question1").value;
+  let b	= document.getElementById("java").value
+  let c = document.getElementById("csharp").value;
+  let d = document.getElementById("python").value;
   
-  if (a === "java") {
-    return "Javascript";
-  }else if (b === "csharp") {
-    return "C#";
-  }else if (c === "python") {
-    return "python";
+  if (a === b) {
+    document.getElementById("output").innerText = "Javascript";
+  }else if (a === c) {
+    document.getElementById("output").innerText = "C#";
+  }else if (a === d) {
+    document.getElementById("output").innerText = "Python";
   }
 }
 
 window.addEventListener("load", function() {
   const form = document.getElementById("questions")
-  document.querySelector("form").onsubmit = function(e) {
-    e.preventDefault();
-    
-  const result = codename(e)
-  document.getElementById("output").innerText = result;
-  }
+  form.addEventListener("submit", codename)
+  //document.querySelector("form").onsubmit = codename()
+  
 });
-
-
 
