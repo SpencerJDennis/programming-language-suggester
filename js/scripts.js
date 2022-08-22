@@ -11,6 +11,7 @@ function codename(event) {
     document.getElementById("output").innerText = "C#";
   }else if (a === d) {
     document.getElementById("output").innerText = "Python";
+  } else {document.getElementById("output").innerText = "Error please input a different answer!";
   }
 }
 

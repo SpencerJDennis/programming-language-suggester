@@ -20,7 +20,9 @@ _This is a website whith five questions which when answered suggest one of three
  
 * _Go to my Repository page on [Git Hub](https://github.com/SpencerJDennis/portfolio)_
 * _Click on the Programming-Language-Suggester Repository_
-* _You can clone the project yourself if you would like to see how it interacts in the webrowser_
+* _You can clone the project yourself to your desktop, if you would like to see how it interacts in the webrowser_
+* _Once you have the project cloned open up the folder located on your desktop called Programming-language-suggester._
+* _Once you have the folder open click on the index.html file. This should open up your web browser and you can interact witht he site._ 
 
  
 _N/A_
